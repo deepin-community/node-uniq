@@ -1,0 +1,32 @@
+Source: node-uniq
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 12)
+ , node-tape <!nocheck>
+ , pkg-js-tools (>= 0.9.20~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-uniq
+Vcs-Git: https://salsa.debian.org/js-team/node-uniq.git
+Homepage: https://github.com/mikolalysenko/uniq
+Rules-Requires-Root: no
+
+Package: node-uniq
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Description: Node.js module to remove duplicates from a sorted array in place
+ Why use this instead of underscore.uniq[ue]?
+ A few reasons:
+  * This library updates the array in place without making an extra copy (and
+ so it is faster for large arrays)
+  * It also accepts a custom comparison function so you can remove duplicates
+ from arrays containing object
+  * It is more modular in the sense that it doesn't come with a bazillion other
+ utility grab bag functions.
+ .
+ Node.js is an event-based server-side JavaScript engine.

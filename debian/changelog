@@ -1,0 +1,23 @@
+node-uniq (1.0.1-2) unstable; urgency=medium
+
+  [ Xavier Guimard ]
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Update debian/watch to use npm registry
+  * Add upstream/metadata
+  * Use pkg-js-tools auto test & install
+  * Update VCS fields to salsa
+
+  [ Nilesh Patra ]
+  * Make test more robust, to pass with Node.js >= 12
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 24 Jan 2020 20:38:02 +0100
+
+node-uniq (1.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #879746)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 25 Oct 2017 16:59:58 +0530
